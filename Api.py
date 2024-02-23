@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/get_data', methods=['GET'])
 def get_data():
     try:
-        df = pd.read_csv('data.csv')
+        df = pd.read_csv('info_especes.csv')
         return jsonify(df.to_dict(orient='records'))
     except FileNotFoundError:
         return jsonify({'error': 'File not found'}), 404
