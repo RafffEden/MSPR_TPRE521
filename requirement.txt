@@ -2,3 +2,5 @@ flask
 pandas
 utillc
 python-dotenv
+opencv-python
+scikit-image
