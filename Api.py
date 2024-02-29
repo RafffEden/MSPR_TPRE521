@@ -32,6 +32,7 @@ def upload_image():
     # Save the uploaded file
     filename = 'uploaded_image.png'
     # A ajouter l'image dans le dossier associé et les data dans le data.csv de dataiku 
+    
     img_path = os.path.join(app.config['UPLOAD_FOLDER'], filename) 
     file.save(img_path)
     return jsonify({'image_url': f'/uploads/{filename}'})
