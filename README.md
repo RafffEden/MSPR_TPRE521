@@ -105,8 +105,6 @@ Si ce n'est pas le cas voici un lien qui peut vous aidez :
 https://pip.pypa.io/en/stable/installation/
 
 
-### Amelioration possible 
-
 ## 🧑‍💻 Auteur(s)
 TARLET Tom
 MONTEIRO MATOS Rafael
