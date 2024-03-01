@@ -22,7 +22,10 @@ Cette application permettra en outre de recueillir des données précises sur le
 
 ## 🤼‍♀️ Use cases
 
-## 🖧 Matériel 
+- L'utilisateur peut envoyer une requête à l'API afin d'obtenir une prédiction sur la classe d'une image qu'il aura choisie.
+- L'utilisateur peut aussi envoyer une requête afin d'obtenir les informations reliée à la prédiction donnée.
+- L'utilisateur peut également lancer le script de l'ETL afin d'extraire les données du modèles.
+
 
 ## 📊 Diagrammes de conception
 
