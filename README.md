@@ -31,6 +31,10 @@ Cette application permettra en outre de recueillir des données précises sur le
 
 ![Diagramme de conception](/images_readme/Diagramme_conception.png "Diagramme de conception")
 
+- Les images du jeu de données d'entraînement sont d'abord traitées avec un script python, utilisant la librairie pandas, afin d'obtenir un dataset ( Data.csv ) exploitable par le modèle de machine learning. Les données sont ensuite séparées en jeux de test et d'entrainement pour alimenter le modèle.
+
+- L'API peut quand à elle récupérer la nouvelle image envoyée par l'utilisateur pour en faire une prédiction grâce au modèle et donner le résultat à l'utilisateur, accompagné des informations complémentaires liées à la prédiction issues de infos_espèces.CSV.
+
 ## 📂 Arborescence du projet
 L'arborescence du projet ce compose comme suit :
 ```bash
