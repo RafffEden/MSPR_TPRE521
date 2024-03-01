@@ -28,6 +28,7 @@ Cette application permettra en outre de recueillir des données précises sur le
 
 ## 📂 Arborescence du projet
 L'arborescence du projet ce compose comme suit :
+```bash
 .
 ├── Api.py
 ├── Data
@@ -70,7 +71,7 @@ L'arborescence du projet ce compose comme suit :
 │   └── uploaded_image.png
 ├── infos_especes.csv
 └── requirement.txt
-
+```
 ## ✅ Pré-requis 
 Afin que ce projet fonctionne voici mes listes des pre-requis necessaire: 
 - Python 3.10 minimum 
