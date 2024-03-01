@@ -27,6 +27,49 @@ Cette application permettra en outre de recueillir des données précises sur le
 ## 📊 Diagrammes de conception
 
 ## 📂 Arborescence du projet
+L'arborescence du projet ce compose comme suit :
+.
+├── Api.py
+├── Data
+│   ├── data.csv
+│   └── data_no_labeled.csv
+├── Design
+│   ├── logo_blanc.png
+│   ├── logo_vert.png
+│   └── wildaware-high-resolution-color-logo.png
+├── Mammiferes
+│   ├── Castor
+│   │   └── images
+│   ├── Chat
+│   │   └── images
+│   ├── Chien
+│   │   └── images
+│   ├── Coyote
+│   │   └── images
+│   ├── Ecureuil
+│   │   └── images
+│   ├── Lapin
+│   │   └── images
+│   ├── Loup
+│   │   └── images
+│   ├── Lynx
+│   │   └── images
+│   ├── Ours
+│   │   └── images
+│   ├── Puma
+│   │   └── images
+│   ├── Rat
+│   │   └── images
+│   ├── Raton laveur
+│   │   └── images
+│   └── Renard
+│       └── images
+├── README.md
+├── Script_ETL.py
+├── Upload
+│   └── uploaded_image.png
+├── infos_especes.csv
+└── requirement.txt
 
 ## ✅ Pré-requis 
 Afin que ce projet fonctionne voici mes listes des pre-requis necessaire: 
