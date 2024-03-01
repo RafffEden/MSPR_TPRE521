@@ -3,11 +3,11 @@ import pandas as pd
 from utillc import *
 import os
 from dotenv import dotenv_values 
+from Script_ETL import load_image
 
 app = Flask(__name__)
 config = dotenv_values(".env")
-UPLOAD_FOLDER = config["UPLOAD_FOLDER"]
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+UPLOAD_PATH = config["UPLOAD_PATH"]
 
 
 info = pd.read_csv("infos_especes.csv",delimiter=";")
@@ -33,8 +33,9 @@ def upload_image():
     filename = 'uploaded_image.png'
     # A ajouter l'image dans le dossier associé et les data dans le data.csv de dataiku 
     
-    img_path = os.path.join(app.config['UPLOAD_FOLDER'], filename) 
+    img_path = os.path.join(UPLOAD_PATH, filename) 
     file.save(img_path)
+    load_image(UPLOAD_PATH)
     return jsonify({'image_url': f'/uploads/{filename}'})
 
 if __name__ == '__main__':

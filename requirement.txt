@@ -4,3 +4,4 @@ utillc
 python-dotenv
 opencv-python
 scikit-image
+scikit-learn

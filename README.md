@@ -28,6 +28,3 @@ MSPR TPRE21 E61 Créer un modèle de données d'une solution I.A en utilisant de
 
 ## ⚖️ License
 
-
-## TODO 
-- récupérer le data.csv et la méthode qui permet de créer les données pour la prédiction et l'ajouter dans le post de l'api afin d'ajouter les nouvelles données aux dataset
