@@ -26,6 +26,8 @@ Cette application permettra en outre de recueillir des données précises sur le
 
 ## 📊 Diagrammes de conception
 
+![Diagramme de conception](/images_readme/Diagramme_conception.jpg "Diagramme de conception")
+
 ## 📂 Arborescence du projet
 L'arborescence du projet ce compose comme suit :
 ```bash
