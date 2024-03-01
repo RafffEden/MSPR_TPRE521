@@ -105,11 +105,8 @@ Si ce n'est pas le cas voici un lien qui peut vous aidez :
 https://pip.pypa.io/en/stable/installation/
 
 
-## 🧪 Tests et performance
-
 ### Amelioration possible 
 
 ## 🧑‍💻 Auteur(s)
-
-## ⚖️ License
-
+TARLET Tom
+MONTEIRO MATOS Rafael
