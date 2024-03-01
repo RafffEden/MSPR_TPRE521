@@ -29,7 +29,17 @@ Cette application permettra en outre de recueillir des données précises sur le
 ## 📂 Arborescence du projet
 
 ## ✅ Pré-requis 
+Afin que ce projet fonctionne voici mes listes des pre-requis necessaire: 
+- Python 3.10 minimum 
+- flask
+- pandas
+- utillc
+- python-dotenv
+- opencv-python
+- scikit-image
+- scikit-learn
 
+Vous trouverez plus bas comment obtenir les pre-requis manquants au bon fonctionnement.
 ## ⚙️ Installation
 ### Pour Git 
 #### Windows 
@@ -46,7 +56,18 @@ cd vous permet de vous rendre dans le dossier de destination par exemple :
 ```bash
 cd Documents
 ```
-cette ligne me permet de me rendre dans le dossier documents 
+cette ligne vous permet de vous rendre dans le dossier *Documents* 
+
+Rendez-vous donc dans le dossier de votre choix et entrez la commande :
+```bash
+git clone https://github.com/RafffEden/MSPR_TPRE521.git
+```
+cette commande va télécharger le projet dans votre dossier ensuite tapez :
+```bash
+cd MSPR_TPRE521
+```
+pour accèder au dossier du projet.
+
 #### Linux 
 Ouvrez un terminal et entrez les instructions suivantes :
 ```bash
@@ -60,7 +81,7 @@ Pour pouvoir utiliser ce projet, il est nécessaire d'avoir un environnement pyt
 Ce rendre sur le lien suivant et télécharger la verion la plus récente de python :
 https://www.python.org/downloads/
 
-Pensez au moment de lancer l'installation à cocher la case "Ajouter à la variable PATH" !
+Pensez au moment de lancer l'installation à cocher la case *Ajouter à la variable PATH* !
 
 #### Linux 
 Ouvrez un terminal et entrez les instructions suivantes :
@@ -73,8 +94,16 @@ puis
 sudo apt-get install python
 ```
 ### Pour les paquets
-#### Windows
-Ouvrez git-bash et rendez-vous dans le dossier dans lequel vous avez cloné ce dépot
+Rendez-vous dans le dossier via un terminal (Linux) ou git-bash (Windows) dans lequel vous avez cloné ce dépot et entrez les commandes : 
+```bash
+pip install --upgrade pip
+pip install -r requirement.txt 
+```
+normalement l'ensemble des paquets requis pour le projets devrait s'installer.
+
+Si ce n'est pas le cas voici un lien qui peut vous aidez :
+https://pip.pypa.io/en/stable/installation/
+
 
 ## 🧪 Tests et performance
 
