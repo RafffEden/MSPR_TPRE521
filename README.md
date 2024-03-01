@@ -20,7 +20,7 @@ Cette application permettra en outre de recueillir des données précises sur le
 - Création du script/requête de récuperation des infos complémentaires d'une espèce
 - Création du premier script/requête d'écriture des données recueillies
 
-## 🤼‍♀️ Use cases
+## 🤼‍♀️ Cas d'utilisation 
 
 - L'utilisateur peut envoyer une requête à l'API afin d'obtenir une prédiction sur la classe d'une image qu'il aura choisie.
 - L'utilisateur peut aussi envoyer une requête afin d'obtenir les informations reliée à la prédiction donnée.
