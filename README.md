@@ -1,4 +1,4 @@
-# MSPR TPRE21 E61 
+# MSPR TPRE521
 Créer un modèle de données d'une solution I.A en utilisant des méthodes de Data sciences
 
 ## 🎯 Contexte & cahier des charges
