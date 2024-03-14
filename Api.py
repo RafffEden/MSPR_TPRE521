@@ -30,9 +30,7 @@ def upload_image():
     if file.filename == '':
         return jsonify({'error': 'No selected file'}), 400
     # Save the uploaded file
-    filename = 'uploaded_image.png'
-    # A ajouter l'image dans le dossier associé et les data dans le data.csv de dataiku 
-    
+    filename = 'uploaded_image.png'    
     img_path = os.path.join(UPLOAD_PATH, filename) 
     file.save(img_path)
     load_image(UPLOAD_PATH)

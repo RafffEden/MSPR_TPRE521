@@ -20,12 +20,10 @@ def hashage(img):
         hash_img = hashlib.sha256(b_img.read()).digest()
     return hash_img
 
-# Function to load and preprocess images
-def load_original_dataset(folder_path):
+def open_images(folder_path):
     dt_images_finale = pd.DataFrame() 
     images_list = []
     img_path_list = []
-    
     for filename in os.listdir(folder_path):
         img_path = os.path.join(folder_path, filename)
         img_path_list.append(img_path)
@@ -37,19 +35,24 @@ def load_original_dataset(folder_path):
         
     dt_images_finale['Path'] = img_path_list 
     dt_images_finale['Image'] = images_list
+    return dt_images_finale
+
+# Function to load and preprocess images
+def load_original_dataset():
     dt_images_finale = pd.DataFrame()
+    dt_images = pd.DataFrame()
 
     for folder in folders:
-        dt_images_finale = load_original_dataset(os.path.join(IMG_PATH,folder))
-        dt_images_finale['Target'] = folder
-        dt_images_finale['Hash'] = dt_images_finale['Path'].apply(lambda x : hashage(x))
-        dt_images_finale['Features'] = dt_images_finale['Image'].apply(lambda x : hog(x, orientations = 9, pixels_per_cell= (8,8), cells_per_block=(2,2)))
+        dt_images = open_images(os.path.join(IMG_PATH,folder))
+        dt_images['Target'] = folder
+        dt_images['Hash'] = dt_images['Path'].apply(lambda x : hashage(x))
+        dt_images['Features'] = dt_images['Image'].apply(lambda x : hog(x, orientations = 9, pixels_per_cell= (8,8), cells_per_block=(2,2)))
 
-        dt_images_finale = pd.concat([dt_images_finale,dt_images_finale])
+        dt_images_finale = pd.concat([dt_images_finale,dt_images])
             
     # print(dt_images_finale.sample(5))
 
-    dt_images_finale.to_csv(os.path.join(DATA_PATH,"data"),sep=";",index=False)
+    dt_images_finale.to_csv(os.path.join(DATA_PATH,"data.csv"),sep=";",index=False)
 
     X = dt_images_finale["Features"]
     Y = dt_images_finale["Target"]
@@ -83,4 +86,5 @@ def load_image(folder_path):
     df.to_csv(os.path.join(DATA_PATH,"data_no_labeled.csv"),sep=";")
     return True
     
-load_image(UPLOAD_PATH)
+if __name__ == "__main__" : 
+    load_original_dataset()
